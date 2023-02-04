@@ -6,7 +6,7 @@ const Login = (props) => {
   // const context=useContext(userContext);
   // const {login}=context;
   let history=useNavigate()
-  const host = "http://localhost:5000";
+  const host = REACT_APP_SERVER_URL;
   const [credentials,setCredentials]=useState({email:"",password:""})
   const handleSubmit=async(e)=>{
     e.preventDefault();
