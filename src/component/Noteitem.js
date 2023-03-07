@@ -15,7 +15,7 @@ const Noteitem = (props) => {
             <hr />
             <p className="card-text">{note.tag}</p>
             <i className='bx bxs-edit mx-2' onClick={()=>{updateNote(note)}}></i>
-            <i className='bx bxs-trash' onClick={()=>{ DeleteNote(note._id);props.showAlert('success',"Deleted Successfully")}} ></i>        
+            <i className='bx bxs-trash' style={{cursor:{color:"red"}}} onClick={()=>{ DeleteNote(note._id);props.showAlert('success',"Deleted Successfully")}} ></i>        
           </div>
         </div>
     </div>
