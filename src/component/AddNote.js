@@ -18,7 +18,7 @@ const AddNote = (props) => {
   return (
     <div className='container'>
            <h1>Add Notes</h1>
-      <form>
+      <form >
   <div className="mb-3">
     <label htmlFor="title" className="form-label">Title</label>
     <input type="text" className="form-control" id="title" name='title' value={Notes.title} aria-describedby="titleHelp" onChange={onChange} required/>
