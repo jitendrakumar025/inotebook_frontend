@@ -1,9 +1,10 @@
+import { Box } from '@mui/material';
 import React ,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 const SignUp = (props) => {
   let history =useNavigate()
   // const host = process.env.REACT_APP_SERVER_URL;
-  const host = process.env.REACT_APP_SERVER_URL;
+  const host = "http://localhost:5000" ;
   const [credentials,setCredentials]=useState({name:"",email:"",password:"",cnf_password:""})
   const handleSubmit=async(e)=>{
     e.preventDefault();
@@ -36,7 +37,7 @@ const SignUp = (props) => {
  }
 
   return (
-    <div className='container'>
+    <Box sx={{ display: "flex" ,flexDirection:"column" ,alignItems:"center" }} width="70%">
       <div className="my-3">
         <h2>Register</h2>
         <hr />
@@ -64,7 +65,7 @@ const SignUp = (props) => {
    <p>Already have an Account, <i onClick={handleLog} className="text-primary" >Login</i> Instead </p>
   </div>
 </form>
-    </div>
+    </Box>
   )
 }
 

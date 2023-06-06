@@ -29,6 +29,7 @@ function App() {
       <Router>
       <Navbar/>
       <Alert alert={alert}/>
+      {/* <Home showAlert={showAlert}/> */}
        <Routes>
         <Route exact path='/'  element={<Home showAlert={showAlert}/>}></Route>
         <Route exact path='/about' element={<About/>}></Route>
