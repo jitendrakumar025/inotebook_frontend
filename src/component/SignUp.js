@@ -3,8 +3,8 @@ import React ,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 const SignUp = (props) => {
   let history =useNavigate()
-  // const host = process.env.REACT_APP_SERVER_URL;
-  const host = "http://localhost:5000" ;
+  const host = process.env.REACT_APP_SERVER_URL;
+  // const host = "http://localhost:5000" ;
   const [credentials,setCredentials]=useState({name:"",email:"",password:"",cnf_password:""})
   const handleSubmit=async(e)=>{
     e.preventDefault();
