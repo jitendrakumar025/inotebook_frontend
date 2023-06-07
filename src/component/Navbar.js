@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Popup open={open} />
+      {localStorage.getItem("token") && <Popup open={open} />}
       <nav className="navbar navbar-expand-lg bg-light sticky-top">
         <Box className="container-fluid " mx="2rem" >
           <Link className="navbar-brand" to="/">
