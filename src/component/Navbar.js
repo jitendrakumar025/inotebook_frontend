@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Popup } from "./Popup";
-import logo from "../public/logo.png";
+// import logo from "../public/logo.png";
 const Navbar = () => {
   let location = useLocation();
   useEffect(() => {
@@ -21,7 +21,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light sticky-top">
         <Box className="container-fluid " mx="2rem" >
           <Link className="navbar-brand" to="/">
-            <img src={logo} alt="logo" />
+            <img height={100} src="./logo.png" alt="logo" />
           </Link>
           <button
             className="navbar-toggler"
