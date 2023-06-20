@@ -30,7 +30,7 @@ i{
 }
   
 .cardClass:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: all 0.2s ease-in-out;
   border: solid 1px #00d5ff;
   box-shadow: 0 0 10px #00d5ff;
