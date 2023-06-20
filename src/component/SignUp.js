@@ -21,7 +21,7 @@ const SignUp = (props) => {
   if(json.success){
     localStorage.setItem('token',json.token)
     props.showAlert("success","Account Created Successfully");
-    history('/login')
+    history('/')
   }
   else{
     props.showAlert("danger","This id already exit,Please use different email!");
