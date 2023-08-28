@@ -14,8 +14,13 @@ const Home = (props) => {
         <Divider/>
         <NotesForm showAlert={showAlert} />
       </Box>
-      <iframe height="430" width="350" src="https://bot.dialogflow.com/536a3108-3771-41e1-884a-8f0621ed8678"></iframe>
     </Box>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="faqBot"
+      agent-id="536a3108-3771-41e1-884a-8f0621ed8678"
+      language-code="en"
+    ></df-messenger>
     </>
   );
 };
